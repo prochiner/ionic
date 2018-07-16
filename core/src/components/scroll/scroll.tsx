@@ -140,7 +140,9 @@ export class Scroll {
       resolve = r;
     }).then(() => done && done());
 
-    const self = this;
+    return promise;
+
+    /*const self = this;
     const el = self.el;
     if (!el) {
       // invalid element
@@ -216,6 +218,7 @@ export class Scroll {
     });
 
     return promise;
+    */
   }
 
 
